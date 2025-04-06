@@ -267,7 +267,7 @@
             <div class="photo-section">
                 <div class="photo-frame">
                     <div class="photo-container">
-                        <img id="person-photo" src="assets/WhatsApp Image 2025-04-03 at 08.04.19_394d7ac7.jpg" alt="Birthday Person">
+                        <img id="person-photo" src="assets/WhatsApp Image 2025-04-06 at 14.23.32_68ed75ed.jpg" alt="Birthday Person">
                     </div>
                     <div class="photo-container photo-back">
                         <p>Wishing you the most amazing birthday filled with joy, laughter and beautiful memories!</p>
@@ -291,18 +291,7 @@
                     <p><span id="sender-name">Your Friend</span></p>
                 </div>
                 
-                <h2>Our Precious Memories</h2>
-                <div class="memories">
-                    <div class="memory">
-                        <img src="assets/WhatsApp Image 2025-04-03 at 08.04.19_65523624.jpg" alt="Memory 1">
-                    </div>
-                    <div class="memory">
-                        <img src="assets/WhatsApp Image 2025-04-03 at 08.04.19_c66a855a.jpg" alt="Memory 2">
-                    </div>
-                    <div class="memory">
-                        <img src="assets/WhatsApp Image 2025-04-03 at 08.04.20_35b8f997.jpg" alt="Memory 3">
-                    </div>
-                </div>
+                
             </div>
         </div>
         
@@ -359,26 +348,25 @@
             const timer = setInterval(() => {
                 count--;
                 countdown.textContent = count;
-                
                 if (count <= 0) {
-                clearInterval(timer);
-                countdown.style.display = 'none';
-                surpriseContent.style.display = 'block';
-                surpriseContent.style.animation = 'fadeIn 2s forwards';
-                startFireworks();
-                
-                // Start playing music automatically
-                const music = document.getElementById('birthday-music');
-                music.play();
-                isPlaying = true;
-                
-                // Update music control button to show pause icon
-                musicControl.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line></svg>';
-                
-                // Customize with person's info
-                document.getElementById('person-name').textContent = 'Miss Amy Enobore';  // Change to actual name
-                document.getElementById('sender-name').textContent = 'Frank';   // Change to actual name
-}
+                    clearInterval(timer);
+                    countdown.style.display = 'none';
+                    surpriseContent.style.display = 'block';
+                    surpriseContent.style.animation = 'fadeIn 2s forwards';
+                    startFireworks();
+                    
+                    // Start playing music automatically
+                    const music = document.getElementById('birthday-music');
+                    music.play();
+                    isPlaying = true;
+                    
+                    // Update music control button to show pause icon
+                    musicControl.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line></svg>';
+                    
+                    // Customize with person's info
+                    document.getElementById('person-name').textContent = 'Kofi';  // Change to actual name
+                    document.getElementById('sender-name').textContent = 'Daniel';   // Change to actual name
+                }
             }, 1000);
             
             // Fireworks
@@ -509,22 +497,22 @@
                 animate();
             }
             
-            // Music control
-            const musicControl = document.getElementById('music-control');
-            const music = document.getElementById('birthday-music');
-            let isPlaying = false;
+            // // Music control
+            // const musicControl = document.getElementById('music-control');
+            // const music = document.getElementById('birthday-music');
+            // let isPlaying = false;
             
-            musicControl.addEventListener('click', function() {
-                if (isPlaying) {
-                    music.pause();
-                    isPlaying = false;
-                    musicControl.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>';
-                } else {
-                    music.play();
-                    isPlaying = true;
-                    musicControl.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line></svg>';
-                }
-            });
+            // musicControl.addEventListener('click', function() {
+            //     if (isPlaying) {
+            //         music.pause();
+            //         isPlaying = false;
+            //         musicControl.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>';
+            //     } else {
+            //         music.play();
+            //         isPlaying = true;
+            //         musicControl.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line></svg>';
+            //     }
+            // });
         });
     </script>
 </body>
